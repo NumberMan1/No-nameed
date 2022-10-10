@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/button">
+        <file>Picture/ui_button/garden.jpg</file>
+    </qresource>
+    <qresource prefix="/garden/plant">
+        <file>Picture/garden/plant/plant.png</file>
+    </qresource>
+    <qresource prefix="/graden/tool">
+        <file>Picture/garden/tool/glove.jpg</file>
+        <file>Picture/garden/tool/shovel.jpg</file>
+    </qresource>
+    <qresource prefix="/graden/background">
+        <file>Picture/garden/background/background.jpg</file>
+    </qresource>
+    <qresource prefix="/common">
+        <file>Picture/loading.jpg</file>
+    </qresource>
+</RCC>
