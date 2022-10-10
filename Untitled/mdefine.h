@@ -29,7 +29,8 @@ public:
     static const QString sunFlowerName,
                          gloveName,
                          shovelName,
-                         backGroundName;
+                         backGroundName,
+                         loadingName;
     
     // 铲子和手套等工具
     static const int shovelWidth = 160,
@@ -43,10 +44,7 @@ public:
     };
 };
 
-const QString MDefine::sunFlowerName = ":/garden/plant/Picture/garden/plant/plant.png";
-const QString MDefine::gloveName = ":/graden/tool/Picture/garden/tool/glove.jpg";
-const QString MDefine::shovelName = ":/graden/tool/Picture/garden/tool/shovel.jpg";
-const QString MDefine::backGroundName = ":/graden/background/Picture/garden/background/background.jpg";
+
 
 } // namespace Garen
 

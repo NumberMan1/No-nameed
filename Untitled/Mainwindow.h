@@ -1,7 +1,6 @@
 ﻿#ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
 #include "gardencontrol.h"
 
 QT_BEGIN_NAMESPACE

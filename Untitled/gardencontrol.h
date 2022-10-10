@@ -7,8 +7,13 @@
 #include <QMediaPlayer>
 #include <QDomDocument>
 #include <QGraphicsPixmapItem>
+#include <QMainWindow>
 
 #include "gardenitem.h"
+
+namespace Ui {
+class GardenUI;
+}
 
 namespace Garden {
 
@@ -16,12 +21,14 @@ namespace Garden {
 class GardenControl : public QObject
 {
 public:
-    explicit GardenControl(QObject *parent);
+    explicit GardenControl(QObject *parent, QMainWindow *_mainWindow);
     ~GardenControl();
     // 调用实例
-    inline static GardenControl* Instance(QObject *parent) {
+    inline static
+    GardenControl* Instance(QObject *parent,
+                                          QMainWindow *_mainWindow) {
         if (!mInstance) {
-            mInstance = new GardenControl(parent);
+            mInstance = new GardenControl(parent, _mainWindow);
             return mInstance;
         } else {
             return mInstance;
@@ -33,13 +40,15 @@ public:
 
 private:
     static GardenControl *mInstance;
+    Ui::GardenUI *mUI;
 
     // 视图
-    QGraphicsView mView;
     QGraphicsScene mScene;
 
     // 场景元素
-    QGraphicsPixmapItem *mBackGroundPixmap;
+    QGraphicsPixmapItem mBackGroundPixmap;
+    Shovel *mShovel;
+    Glove *mGlove;
 
     // 定时器
 

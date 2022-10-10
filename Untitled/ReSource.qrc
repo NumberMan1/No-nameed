@@ -1,9 +1,12 @@
 <RCC>
     <qresource prefix="/button">
         <file>Picture/ui_button/garden.jpg</file>
+        <file>Picture/ui_button/back.jpg</file>
     </qresource>
     <qresource prefix="/garden/plant">
         <file>Picture/garden/plant/plant.png</file>
+        <file>Picture/garden/plant/flowerpot.jpg</file>
+        <file>Picture/garden/plant/sunflower.jpg</file>
     </qresource>
     <qresource prefix="/graden/tool">
         <file>Picture/garden/tool/glove.jpg</file>

@@ -21,10 +21,9 @@ set(PROJECT_SOURCES
         Mainwindow.cpp Mainwindow.h Mainwindow.ui
         mobjectbybtn.h mobjectbybtn.cpp
         mdefine.h mdefine.cpp
-        gardencontrol.h gardencontrol.cpp
+        gardencontrol.h gardencontrol.cpp Garden.ui
         gardenitem.h gardenitem.cpp
         ReSource.qrc
-        Error.hpp Error.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

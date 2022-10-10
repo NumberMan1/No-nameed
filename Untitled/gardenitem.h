@@ -1,4 +1,4 @@
-#ifndef GARDENITEM_H
+﻿#ifndef GARDENITEM_H
 #define GARDENITEM_H
 
 #include "mobjectbybtn.h"
@@ -24,14 +24,11 @@ public:
                    const PlantType& _plantType);
     virtual ~Plant();
 
-    // 鼠标
-    virtual void dragMoveEvent(QDragMoveEvent *event) override;
-
 
 private:
     int mGrowTime,
         mValue;
-    void SetPlant(const PlantType& _plantType) noexcept;
+    void SetPlant(const PlantType& _plantType);
     void TimeToMakeCoin();
 };
 
@@ -51,7 +48,7 @@ public:
     }
 
     // 鼠标
-    virtual void dragMoveEvent(QDragMoveEvent *event) override;
+    // virtual void dragMoveEvent(QDragMoveEvent *event) override;
 private:
     Shovel *mShovel;
 };
@@ -71,6 +68,8 @@ public:
         }
     }
 
+    // 鼠标
+    // virtual void dragMoveEvent(QDragMoveEvent *event) override;
 private:
     Glove *mGlove;
 };
