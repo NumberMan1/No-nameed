@@ -36,7 +36,6 @@ private:
 class Shovel : public MObjectByBtn
 {
 public:
-    explicit Shovel(QWidget *parent = nullptr);
     virtual ~Shovel();
     inline Shovel* Instance(QWidget *parent = nullptr) {
         if (!mShovel) {
@@ -50,6 +49,7 @@ public:
     // 鼠标
     // virtual void dragMoveEvent(QDragMoveEvent *event) override;
 private:
+    explicit Shovel(QWidget *parent = nullptr);
     Shovel *mShovel;
 };
 
@@ -57,7 +57,6 @@ private:
 class Glove : public MObjectByBtn 
 {
 public:
-    explicit Glove(QWidget *parent = nullptr);
     virtual ~Glove();
     inline Glove* Instance(QWidget *parent = nullptr) {
         if (!mGlove) {
@@ -71,6 +70,7 @@ public:
     // 鼠标
     // virtual void dragMoveEvent(QDragMoveEvent *event) override;
 private:
+    explicit Glove(QWidget *parent = nullptr);
     Glove *mGlove;
 };
 

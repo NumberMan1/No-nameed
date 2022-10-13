@@ -30,7 +30,8 @@ public:
                          gloveName,
                          shovelName,
                          backGroundName,
-                         loadingName;
+                         loadingName,
+                         gardenXML;
     
     // 铲子和手套等工具
     static const int shovelWidth = 160,

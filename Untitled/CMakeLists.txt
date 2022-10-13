@@ -24,6 +24,7 @@ set(PROJECT_SOURCES
         gardencontrol.h gardencontrol.cpp Garden.ui
         gardenitem.h gardenitem.cpp
         ReSource.qrc
+        updatedialog.h updatedialog.cpp updatedialog.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

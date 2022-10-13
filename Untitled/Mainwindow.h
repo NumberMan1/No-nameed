@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include "gardencontrol.h"
+#include "updatedialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

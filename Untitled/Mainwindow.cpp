@@ -16,6 +16,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_gardenBtn_clicked()
 {
-    Garden::GardenControl::Instance(this, this)->Init();
+   Garden::GardenControl::Instance(this, this)->Init();
 }
 

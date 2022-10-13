@@ -21,12 +21,11 @@ namespace Garden {
 class GardenControl : public QObject
 {
 public:
-    explicit GardenControl(QObject *parent, QMainWindow *_mainWindow);
     ~GardenControl();
     // 调用实例
     inline static
     GardenControl* Instance(QObject *parent,
-                                          QMainWindow *_mainWindow) {
+                            QMainWindow *_mainWindow) {
         if (!mInstance) {
             mInstance = new GardenControl(parent, _mainWindow);
             return mInstance;
@@ -39,6 +38,7 @@ public:
     void Init();
 
 private:
+    explicit GardenControl(QObject *parent, QMainWindow *_mainWindow);
     static GardenControl *mInstance;
     Ui::GardenUI *mUI;
 

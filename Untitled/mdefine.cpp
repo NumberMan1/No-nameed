@@ -5,3 +5,4 @@ const QString Garden::MDefine::gloveName = ":/graden/tool/Picture/garden/tool/gl
 const QString Garden::MDefine::shovelName = ":/graden/tool/Picture/garden/tool/shovel.jpg";
 const QString Garden::MDefine::backGroundName = ":/graden/background/Picture/garden/background/background.jpg";
 const QString Garden::MDefine::loadingName = ":/common/Picture/loading.jpg";
+const QString Garden::MDefine::gardenXML = ":/graden/background/Xml/Garden/BackGround.xml";
